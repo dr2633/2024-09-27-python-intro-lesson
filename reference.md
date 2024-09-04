@@ -204,8 +204,7 @@ to run correctly.
 to its caller immediately.
 
 [RGB]{#rgb}
-:   An [additive model](#additive-color-model)
-that represents colors as combinations of red, green, and blue.
+:   An additive model that represents colors as combinations of red, green, and blue.
 Each color's value is typically in the range 0..255
 (i.e., a one-byte integer).
 
@@ -275,7 +274,7 @@ against which the results of a test can be compared.
 
 [type]{#type}
 :   The classification of something in a program (for example, the contents of a variable)
-as a kind of number (e.g. [floating-point](#float), [integer](#integer)),
+as a kind of number (e.g. [floating-point](#floating-point-number), [integer](#integer)),
 [string](#string), or something else.
 
 [type of error]{#type-of-error}

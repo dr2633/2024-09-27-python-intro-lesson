@@ -6,9 +6,9 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Learners are aware of applications for Python in library and information-science work environments.
-- Learners can launch JupyterLab and create a Jupyter Notebook.
-- Learners are able to navigate the JupyterLab interface.
+- Learners are aware of applications for Python their work environments.
+- Learners can access Google Colab and work in a Colab Notebook.
+- Learners are able to navigate the Colab notebook interface.
 - Learners are able to write and run Python cells in a notebook.
 - Learners are able to save their code as an iPython notebook (.ipynb file).
 
@@ -16,10 +16,35 @@ exercises: 5
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
-- How do I use JupyterLab?
-- How can I run Python code in JupyterLab?
+- How do I use Jupyter Notebook?
+- How can I run Python code in Google Colab's Jupyter Notebook?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Before we begin
+
+### Open the collaborative doc for our workshop https://broad.io/cb-python-20240927  
+You'll find all the links listed below in the collaborative doc.
+
+If you haven't completed your workshop setup please visit https://broad.io/cb-python-setup
+
+##### If you need help with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will come help you.
+
+If you've created your colab account, downloaded the workshop data files,  uploaded it to your colab account's google drive AND successfully run the access test, please put the <span style="color:lime">green post-it</span> on your computer to indicate your setup is complete.
+
+To run the access test, visit https://broad.io/cb-python-access-test, 1. click "Copy to Drive" and, in YOUR COPY of `Python_workshop_data_access_test.ipynb` 2. click the ▶️ symbol on the left hand side of the cell.
+![](fig/run_access_test.png){alt='Click the ▶️ symbol'}
+
+This is what success looks like:
+![](fig/success.png){alt=''}
+
+Feel free to browse today's lesson content https:/broad.io/cb-python-20240927-lesson
+![](fig/cb-python-lesson.png){alt='Workshop collaborative doc'}
+
+::::::::::::::::::::::::::::::::::::::::::
+
 
 ## Why Python?
 
@@ -27,34 +52,13 @@ Python is a popular programming language for tasks such as data collection, clea
 
 This lesson works with a series of CSV files of circulation data from the Chicago Public Library system to demonstrate how to use Python to clean, analyze, and visualize usage data that spans over the course of multiple years. 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-## Python in Libraries
-There are a lot of ways that library and information science folks use Python in their work. Go around the room and have helpers and co-teachers share how they have used Python.
 
-Learners: Can you think of other ways to use Python in libraries? Do you have hopes for how you'd like to use Python in the future?
-
-:::::::::::::::  solution
-
-Here a few areas where you might apply Python in your work.
-
-**Metadata work.** Many cataloging teams use Python to migrate, transform and enrich metadata that they receive from different sources. For example, the [pymarc library](https://pypi.org/project/pymarc/) is a popular Python package for working with MARC21 records.
-
-**Collection and citation analysis.** Python can automate workflows to analyze library collections. In cases where spreadsheets and OpenRefine are unable to support specific forms of analysis, Python is a more flexible and powerful tool.
-
-**Assessment.** Library workers often need to collect metrics or statistics on some aspect of their work. Python can be a valuable tool to collect, clean, analyze, and visualize that data in a consistent way over time.
-
-**Accessing data.** Researchers often use Python to collect data (including textual data) from websites and social media platforms. Academic librarians are often well-positioned to help teach these researchers how to use Python for web scraping or querying Application Programming Interfaces (APIs) to access the data they need. 
-
-**Analyzing data.** Python is widely used by scholars who are embarking on different forms of computational research (e.g., network analysis, natural language processing, machine learning). Library workers can leverage Python for their own research in these areas, but also take part in larger networks of academic support related to data science, computational social sciences, and/or digital humanities.
-:::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Use JupyterLab to edit and run Python code.
+## Use Jupyter Notebook to edit and run Python code.
   
-If you haven't already done so, see [the setup instructions](../learners/setup.md) for details on how to install JupyterLab and Python via Anaconda. The setup instructions also walk you through the steps you should follow to create an `lc-python` folder on your Desktop, and to download and unzip the dataset we'll be working with inside of that directory. 
+If you haven't already done so, see [the setup instructions](../learners/setup.md) for details on preparing to use Google Colab for this workshop. The setup instructions also walk you through the steps you should follow to create an `lc-python` folder in your home directory, to download and unzip the dataset we'll be working with inside of that directory and then upload it to Google Drive so it will be accessible to Google Colab. 
 
-### Getting started with JupyterLab
-To run Python, we are going to use Jupyter Notebooks via [JupyterLab][jupyterlab]. Jupyter notebooks are common tools for data science and visualization, and serve as a convenient environment for running Python code interactively where we can view and share the results of our Python code.
+### Getting started with Jupyter Notebook
+To run Python, we are going to use Jupyter Notebooks via [Google Colab][https://colab.google/]. Jupyter notebooks are common tools for data science and visualization, and serve as a convenient environment for running Python code interactively where we can view and share the results of our Python code.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 ### Alternatives to Juypter
@@ -70,65 +74,54 @@ Jupyter notebooks let us execute and view the results of our Python code immedia
   to better explore your data and visualize the results of your analysis.
 - Each notebook contains one or more cells that contain code, text, or images.
 
-### Start JupyterLab
-Once you have created the `lc-python` directory on your Desktop, you can start JupyterLab by opening a shell command line interface or by using Anaconda Navigator.
+## Google colab
 
-#### Mac users - Command Line
+Google colab is a web-based computational notebook hosted in the cloud by Google.
+Much like a lab notebook where a wet-lab experimentalist might have both the 
+experimental protocol and notes on the specific experiment, a Jupyter notebook
+allows you to have code and notes in the same notebook.
 
-1. Press the <kbd>cmd</kbd> + <kbd>spacebar</kbd> keys and search for `Terminal`. Click the result or press <kbd>return</kbd>. (You can also find `Terminal` in your `Applications` folder, under `Utilities`.)
-2. After you have launched Terminal, change directories to the `lc-python` folder you created earlier and type `jupyter lab`. Note that the `$` sign is used to indicate a command to be typed on the command prompt, but we never type the `$` sign itself, just what follows after it.
+Visit https://colab.research.google.com/ and click on `Examples` or, if you're already in colab, `File -> Open notebook`. Then in the resulting window, click on `Examples`.
 
-```bash
-$ cd ../Desktop/lc-python
-$ jupyter lab
-```
+Google offers many example notebooks:    
 
-#### Windows users - Command Line
+![](fig/colab_resources.png){alt='Partial listing of example notebooks offered by Google colab'}  
 
-To start the JupyterLab server you will need to access the Anaconda Prompt.
+Google offers a basic colab experience for free. Hosted runtime machines consume computing resources which will be [shut down](https://research.google.com/colaboratory/faq.html#resource-limits) if you're not active in the notebook. If you see an "Are you still there?" window during this workshop, complete the prompt so your colab notebooks stays active. 
 
-1. Press the <kbd>Windows Logo Key</kbd> and search for `Anaconda Prompt`, click the result or press enter.
+<div>
+<img src="fig/are_you_still_there.png" width="400"/>
+</div>
 
-2. Once you have launched the Anaconda Prompt, type the command `jupyter lab`. Note that the `$` sign is used to indicate a command to be typed on the command prompt, but we never type the `$` sign itself, just what follows after it.
+If you see `Connect` or `Reconnect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is likely to be stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
 
-```bash
-$ jupyter lab
-```
-
-#### Start JupyterLab from Anaconda Navigator
-If you are unfamiliar with the command line,  you can launch JupyterLab by opening the Anaconda Navigator app and choosing the `Launch` button underneath the JuypterLab icon. 
-
-First [start Anaconda Navigator (click for detailed instructions on macOS, Windows, and Linux)](https://docs.anaconda.com/free/navigator/getting-started/#navigator-starting-navigator). You can search for Anaconda Navigator via Spotlight on macOS (<kbd>Command</kbd> + <kbd>spacebar</kbd>), or by using the Windows search function (<kbd>Windows Logo Key</kbd>).
-
-After you have launched Anaconda Navigator, click the `Launch` button under JupyterLab. You may need to scroll down to find it. Here is a screenshot of an Anaconda Navigator page similar to the one that should open on either macOS or Windows.
-
-![Launch JupyterLab from Anaconda Navigator](../episodes/fig/0_anaconda_navigator_landing_page.png){alt='screenshot of the launch button for JuypterLab in Anaconda Navigator'}
-
-## The JupyterLab Interface
-
-Launching JupyterLab opens a new tab or window in your preferred web browser. While JupyterLab enables you to run code from your browser, it does not require you to be online. If you take a look at the URL in your browser address bar, you should see that the environment is located at your localhost, meaning it is running from your computer: `http://localhost:8888/lab`.
-
-When you first open JupyterLab you will see two main panels. In the left sidebar is your file browser. You should see a folder in the file browser named `data` that contains all of our data. 
 
 ### Creating a Juypter Notebook
 
-To the right you will see a `Launcher` tab. Here we have options to launch a Python 3 notebook, a Terminal (where we can use shell commands), text files, and other items. For now, we want to launch a new Python 3 notebook, so click once on the `Python 3 (ipykernel)` button underneath the Notebook header. You can also create a new notebook by selecting *New -> Notebook* from the *File* menu in the Menu Bar.
+You can create a Jupyter Notebook in Google Colab using your preferred web browser by visitng https://colab.research.google.com/notebooks. In the Open Notebook window, click "New notebook".
 
-![Launching a new Python 3 Notebook](../episodes/fig/0_jupyterlab_launcher.png){alt='screenshot of the JupyterLab for launching notebook'}
+When you first open a colab notebook, it may not be ready to execute code. Click on `Connect` (circled in figure) to connect to a hosted runtime. When you see a green checkmark, you're all set to run code in your notebook.  
 
-When you start a new Notebook you should see a new tab labeled `Untitled.ipynb`. You will also see this file listed in the file browser to the left. Right-click on the `Untitled.ipynb` file in the file browser and choose `Rename` from the dropdown options. Let's call the notebook file, `workshop.ipynb`.
+![](fig/new_colab_notebook.png){alt='View of newly created notebook'}  
+
+
+Right-click on `Untitled.ipynb` and edit the name of your notebook. Let's call the notebook file, `workshop.ipynb`.
 
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## JupyterLab? What about Jupyter notebooks? Python notebooks? IPython?
+## Google Colab? What about JupyterLab? Python notebooks? IPython? Quarto?
 
 JupyterLab is the [next stage in the evolution of the Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html#overview).
 If you have prior experience working with Jupyter notebooks, then you will have a good idea of how to work with JupyterLab. Jupyter was created as a spinoff of IPython in 2014, and includes interactive computing support for languages other than just Python, including R and Julia. While you'll still see some references to Python and IPython notebooks, IPython notebooks are officially deprecated in favor of Jupyter notebooks.
 
+[Quarto](https://quarto.org/) also supports Jupyter Notebooks and enables easy generation of technical documents, presentations, dashboards, websites, blogs and books.
+
+We chose Google Colab as an installation-free way for everyone to access the same coding environment. Information on options to run Python on your laptop can be found in the [Colab Alternatives](../learners/setup.md) section under the setup instructions.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-We will share more features of the JupyterLab environment as we advance through the lesson, but for now let's turn to how to run Python code.
+Let's run some Python code using Google Colab.
 
 ### Running Python code 
 
@@ -161,12 +154,19 @@ While Python runs both calculations Juypter will only display the output from th
 
 ### Editing the notebook
 
-You can use the icons at the top of your notebook to edit the cells in your Notebook:
+You can use the icons in your notebook to edit the cells in your Notebook:
 
-- The `+` icon adds a new cell below the selected cell.
-- The scissors icon will delete the current cell. 
+- The `+ Code` and `+ Text` icons adds a new cell below the selected cell.
+- Delete the current cell by clicking the trash icon in the floating icon bar above the right hand side of the current cell. 
 
-You can move cells around in your notebook by hovering over the left-hand margin of a cell until your cursor changes into a four-pointed arrow, and then dragging and dropping the cell where you want it.
+You can move cells around in your notebook by using the arrow icons in the floating icon bar above the right hand side of the current cell.
+
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Note on keyboard shortcuts for Mac
+
+In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 ### Markdown
@@ -190,14 +190,11 @@ You can also use "hotkeys"" to change Jupyter cells from Code to Markdown and ba
 - Press the <kbd>y</kbd> key to convert the cell back to Code.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-[anaconda]: https://docs.anaconda.com/anaconda/install/
-[spyder]: https://www.spyder-ide.org/
-[jupyterlab]: https://jupyterlab.readthedocs.io/en/stable/
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- You can launch JupyterLab from the command line or from Anaconda Navigator.
-- You can use a JupyterLab notebook to edit and run Python.
+- You can run a cloud based Jupyter Notebook with a Google account and a web browser.
+- You can use a Jupyter notebook to edit and run Python.
 - Notebooks can include both code and markdown (text) cells.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::

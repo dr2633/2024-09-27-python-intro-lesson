@@ -26,24 +26,33 @@ exercises: 5
 ## Before we begin
 
 ### Open the collaborative doc for our workshop https://broad.io/cb-python-20240927  
-You'll find all the links listed below in the collaborative doc.
+You'll find all the links listed below as clickable links in the collaborative doc.
 
 If you haven't completed your workshop setup please visit https://broad.io/cb-python-setup
 
-##### If you need help with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will come help you.
+#### **If you need help** with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will come help you.
 
-If you've created your colab account, downloaded the workshop data files,  uploaded it to your colab account's google drive AND successfully run the access test, please put the <span style="color:lime">green post-it</span> on your computer to indicate your setup is complete.
+If you're fully set up (ie created your colab account, downloaded the workshop data files, uploaded the files to your colab account's google drive AND successfully run the access test), please put the <span style="color:limegreen">green post-it</span> on your computer and feel free to browse today's lesson content. https:/broad.io/cb-python-20240927-lesson
 
-To run the access test, visit https://broad.io/cb-python-access-test, 1. click "Copy to Drive" and, in YOUR COPY of `Python_workshop_data_access_test.ipynb` 2. click the ▶️ symbol on the left hand side of the cell.
-![](fig/run_access_test.png){alt='Click the ▶️ symbol'}
 
-This is what success looks like:
-![](fig/success.png){alt=''}
+**To run the access test**  
+1. visit https://broad.io/cb-python-access-test  
+2. click "Copy to Drive" and create your own copy of `Python_workshop_data_access_test.ipynb`  
+  ![](fig/run_access_test.png){alt='Click Copy to Drive'}  
 
-Feel free to browse today's lesson content https:/broad.io/cb-python-20240927-lesson
-![](fig/cb-python-lesson.png){alt='Workshop collaborative doc'}
+3. If you see this dialog box, click "Connect to Google Drive"
+  ![](fig/permit_access.png){alt='Click "Connect to Google Drive"'}  
 
-::::::::::::::::::::::::::::::::::::::::::
+1. Authorize access for the google account you're using for this workshop. There will be several prompts to grant access.
+  ![](fig/authorize_access.png){alt='Authorize access to your google account'}  
+1. Once access has been granted, go back to the access test notebook, click the ▶️ symbol on the left hand side of the first code cell.
+You've successfully loaded data if you see a dataframe appear beneath the code cell
+  ![](fig/success.png){alt='the ▶️ symbol'}
+
+If you see loaded data beneath the code cell, feel free to browse today's lesson content. https:/broad.io/cb-python-20240927-lesson
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Why Python?
@@ -58,11 +67,11 @@ This lesson works with a series of CSV files of circulation data from the Chicag
 If you haven't already done so, see [the setup instructions](../learners/setup.md) for details on preparing to use Google Colab for this workshop. The setup instructions also walk you through the steps you should follow to create an `lc-python` folder in your home directory, to download and unzip the dataset we'll be working with inside of that directory and then upload it to Google Drive so it will be accessible to Google Colab. 
 
 ### Getting started with Jupyter Notebook
-To run Python, we are going to use Jupyter Notebooks via [Google Colab][https://colab.google/]. Jupyter notebooks are common tools for data science and visualization, and serve as a convenient environment for running Python code interactively where we can view and share the results of our Python code.
+To run Python, we are going to use Jupyter Notebooks via [Google Colab](https://colab.google/). Jupyter notebooks are common tools for data science and visualization, and serve as a convenient environment for running Python code interactively where we can view and share the results of our Python code.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 ### Alternatives to Juypter
-There are other ways of editing, managing, and running Python code. Software developers often use an integrated development environment (IDE) like [PyCharm](https://www.jetbrains.com/pycharm/), [Spyder][spyder] or [Visual Studio Code (VS Code)](https://code.visualstudio.com/), to create and edit Python scripts. Others use text editors like Vim or Emacs to hand-code Python. After editing and saving Python scripts you can execute those programs within an IDE or directly on the command line. 
+There are other ways of editing, managing, and running Python code. Software developers often use an integrated development environment (IDE) like [PyCharm](https://www.jetbrains.com/pycharm/), [Spyder](https://www.spyder-ide.org) or [Visual Studio Code (VS Code)](https://code.visualstudio.com/), to create and edit Python scripts. Others use text editors like Vim or Emacs to hand-code Python. After editing and saving Python scripts you can execute those programs within an IDE or directly on the command line. 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Jupyter notebooks let us execute and view the results of our Python code immediately within the notebook. JupyterLab has several other handy features:
@@ -74,14 +83,14 @@ Jupyter notebooks let us execute and view the results of our Python code immedia
   to better explore your data and visualize the results of your analysis.
 - Each notebook contains one or more cells that contain code, text, or images.
 
-## Google colab
+## Google Colab
 
-Google colab is a web-based computational notebook hosted in the cloud by Google.
+Google Colab is a web-based computational notebook hosted in the cloud by Google.
 Much like a lab notebook where a wet-lab experimentalist might have both the 
 experimental protocol and notes on the specific experiment, a Jupyter notebook
 allows you to have code and notes in the same notebook.
 
-Visit https://colab.research.google.com/ and click on `Examples` or, if you're already in colab, `File -> Open notebook`. Then in the resulting window, click on `Examples`.
+Visit https://colab.research.google.com/ and click on `Examples` or, if you're already in Colab, `File -> Open notebook`. Then in the resulting window, click on `Examples`.
 
 Google offers many example notebooks:    
 
@@ -90,7 +99,7 @@ Google offers many example notebooks:
 Google offers a basic colab experience for free. Hosted runtime machines consume computing resources which will be [shut down](https://research.google.com/colaboratory/faq.html#resource-limits) if you're not active in the notebook. If you see an "Are you still there?" window during this workshop, complete the prompt so your colab notebooks stays active. 
 
 <div>
-<img src="fig/are_you_still_there.png" width="400"/>
+<img src="fig/are_you_still_there.png" alt="Are you still there prompt" width="400"/>
 </div>
 
 If you see `Connect` or `Reconnect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is likely to be stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
@@ -163,9 +172,21 @@ You can move cells around in your notebook by using the arrow icons in the float
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Note on keyboard shortcuts for Mac
+## Note on Colab keyboard shortcuts
 
-In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
+Colab keyboard shortcuts use CMD ⌘ (on a Mac) or CTRL (on Windows) key together with the m key to activate a keyboard shortcut. 
+
+CMD/CTRL M + h show a list of keyboard shortcut options  
+CMD/CTRL M + a insert code cell above  
+CMD/CTRL M + b insert code cell below  
+CMD/CTRL M + m convert cell to markdown cell  
+CMD/CTRL M + y convert cell to code cell
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## About keyboard shortcuts for Mac
+In Colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook environments, Ctrl+F9 may not be an option for Mac. For the rest of this workshop, we'll use indicate Ctrl+\<keystroke\> for simplicity. Mac users should keep in mind that using Command (⌘) in lieu of Ctrl is an option. 
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
@@ -176,18 +197,10 @@ Instructors: Since the lesson is focused on Python we don't include any Markdown
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
-You can add text to a Juypter notebook by selecting a cell, and changing the dropdown above the notebook from `Code` to `Markdown`. Markdown is a lightweight language for formatting text. This feature allows you to annotate your code, add headers, and write documentation to help explain the code. While we won't cover Markdown in this lesson, there are many helpful online guides out there:
+You can add text to a Juypter notebook by selecting a cell, and changing the cell from `Code` to `Markdown`. In Colab, select the cell, then use the keyboard shortcut CMD/CTRL M + y. Markdown is a lightweight language for formatting text. This feature allows you to annotate your code, add headers, and write documentation to help explain the code. While we won't cover Markdown in this lesson, there are many helpful online guides out there:
 - [Markdown for Jupyter Cheatsheet (IBM)](https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet)
 - [Markdown Guide (Matt Cone)](https://www.markdownguide.org/)
 
-![Changing a cell from Code to Markdown](../episodes/fig/0_jupyter_markdown_dd.png){alt='screenshot of the Jupyter notebook dropdown to change a cell to Markdown'}
-
-You can also use "hotkeys"" to change Jupyter cells from Code to Markdown and back:
-
-- Click on the code cell that you want to convert to a Markdown cell.
-- Press the <kbd>Esc</kbd> key to enter command mode.
-- Press the <kbd>M</kbd> key to convert the cell to Markdown.
-- Press the <kbd>y</kbd> key to convert the cell back to Code.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 

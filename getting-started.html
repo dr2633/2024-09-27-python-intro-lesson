@@ -218,7 +218,7 @@
       <div class="accordion-body">
         <ul><li><a href="#why-python">Why Python?</a></li>
 <li><a href="#use-jupyter-notebook-to-edit-and-run-python-code.">Use Jupyter Notebook to edit and run Python code.</a></li>
-<li><a href="#google-colab">Google colab</a></li>
+<li><a href="#google-colab">Google Colab</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -391,7 +391,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Getting Started</h1>
-        <p>Last updated on 2024-09-04 |
+        <p>Last updated on 2024-09-11 |
 
         <a href="https://github.com/broadinstitute/2024-09-27-python-intro-lesson/edit/main/episodes/getting-started.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -440,21 +440,30 @@ file).</li>
 <div class="section level3 accordion-body">
 <h3 id="open-the-collaborative-doc-for-our-workshop-httpsbroad-iocb-python-20240927">Open the collaborative doc for our workshop <a href="https://broad.io/cb-python-20240927" class="external-link uri">https://broad.io/cb-python-20240927</a>
 <a class="anchor" aria-label="anchor" href="#open-the-collaborative-doc-for-our-workshop-httpsbroad-iocb-python-20240927"></a></h3>
-<p>You’ll find all the links listed below in the collaborative doc.</p>
+<p>You’ll find all the links listed below as clickable links in the
+collaborative doc.</p>
 <p>If you haven’t completed your workshop setup please visit <a href="https://broad.io/cb-python-setup" class="external-link uri">https://broad.io/cb-python-setup</a></p>
-<div class="section level5">
-<h5 id="if-you-need-help-with-setup-please-put-the-pink-post-it-on-your-computer-and-a-ta-will-come-help-you-">If you need help with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will
-come help you.<a class="anchor" aria-label="anchor" href="#if-you-need-help-with-setup-please-put-the-pink-post-it-on-your-computer-and-a-ta-will-come-help-you-"></a></h5>
-<p>If you’ve created your colab account, downloaded the workshop data
-files, uploaded it to your colab account’s google drive AND successfully
-run the access test, please put the <span style="color:lime">green
-post-it</span> on your computer to indicate your setup is complete.</p>
-<p>To run the access test, visit <a href="https://broad.io/cb-python-access-test" class="external-link uri">https://broad.io/cb-python-access-test</a>, 1. click “Copy
-to Drive” and, in YOUR COPY of
-<code>Python_workshop_data_access_test.ipynb</code> 2. click the ▶️
-symbol on the left hand side of the cell. <img src="fig/run_access_test.png" alt="Click the ▶️ symbol" class="figure"></p>
-<p>This is what success looks like: <img src="fig/success.png" alt="" class="figure"></p>
-<p>Feel free to browse today’s lesson content <a href="https:/broad.io/cb-python-20240927-lesson" class="uri">https:/broad.io/cb-python-20240927-lesson</a> <img src="fig/cb-python-lesson.png" alt="Workshop collaborative doc" class="figure"></p>
+<div class="section level4">
+<h4 id="if-you-need-help-with-setup-please-put-the-pink-post-it-on-your-computer-and-a-ta-will-come-help-you-">
+<strong>If you need help</strong> with setup, please put the <span style="color:fuchsia">pink post-it</span> on your computer and a TA will
+come help you.<a class="anchor" aria-label="anchor" href="#if-you-need-help-with-setup-please-put-the-pink-post-it-on-your-computer-and-a-ta-will-come-help-you-"></a></h4>
+<p>If you’re fully set up (ie created your colab account, downloaded the
+workshop data files, uploaded the files to your colab account’s google
+drive AND successfully run the access test), please put the <span style="color:limegreen">green post-it</span> on your computer and feel
+free to browse today’s lesson content. <a href="https:/broad.io/cb-python-20240927-lesson" class="uri">https:/broad.io/cb-python-20240927-lesson</a></p>
+<p><strong>To run the access test</strong><br>
+1. visit <a href="https://broad.io/cb-python-access-test" class="external-link uri">https://broad.io/cb-python-access-test</a><br>
+2. click “Copy to Drive” and create your own copy of
+<code>Python_workshop_data_access_test.ipynb</code><br><img src="fig/run_access_test.png" alt="Click Copy to Drive" class="figure"></p>
+<ol start="3" style="list-style-type: decimal"><li><p>If you see this dialog box, click “Connect to Google Drive” <img src="fig/permit_access.png" alt='Click "Connect to Google Drive"' class="figure"></p></li>
+<li><p>Authorize access for the google account you’re using for this
+workshop. There will be several prompts to grant access. <img src="fig/authorize_access.png" alt="Authorize access to your google account" class="figure"><br></p></li>
+<li><p>Once access has been granted, go back to the access test
+notebook, click the ▶️ symbol on the left hand side of the first code
+cell. You’ve successfully loaded data if you see a dataframe appear
+beneath the code cell <img src="fig/success.png" alt="the ▶️ symbol" class="figure"></p></li>
+</ol><p>If you see loaded data beneath the code cell, feel free to browse
+today’s lesson content. <a href="https:/broad.io/cb-python-20240927-lesson" class="uri">https:/broad.io/cb-python-20240927-lesson</a></p>
 </div>
 </div>
 </div>
@@ -479,11 +488,10 @@ inside of that directory and then upload it to Google Drive so it will
 be accessible to Google Colab.</p>
 <div class="section level3">
 <h3 id="getting-started-with-jupyter-notebook">Getting started with Jupyter Notebook<a class="anchor" aria-label="anchor" href="#getting-started-with-jupyter-notebook"></a></h3>
-<p>To run Python, we are going to use Jupyter Notebooks via [Google
-Colab][<a href="https://colab.google/" class="external-link uri">https://colab.google/</a>]. Jupyter notebooks are common
-tools for data science and visualization, and serve as a convenient
-environment for running Python code interactively where we can view and
-share the results of our Python code.</p>
+<p>To run Python, we are going to use Jupyter Notebooks via <a href="https://colab.google/" class="external-link">Google Colab</a>. Jupyter notebooks are
+common tools for data science and visualization, and serve as a
+convenient environment for running Python code interactively where we
+can view and share the results of our Python code.</p>
 <div id="alternatives-to-juypter" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -493,12 +501,11 @@ share the results of our Python code.</p>
 <div class="callout-content">
 <p>There are other ways of editing, managing, and running Python code.
 Software developers often use an integrated development environment
-(IDE) like <a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a>,
-[Spyder][spyder] or <a href="https://code.visualstudio.com/" class="external-link">Visual
-Studio Code (VS Code)</a>, to create and edit Python scripts. Others use
-text editors like Vim or Emacs to hand-code Python. After editing and
-saving Python scripts you can execute those programs within an IDE or
-directly on the command line.</p>
+(IDE) like <a href="https://www.jetbrains.com/pycharm/" class="external-link">PyCharm</a>, <a href="https://www.spyder-ide.org" class="external-link">Spyder</a> or <a href="https://code.visualstudio.com/" class="external-link">Visual Studio Code (VS Code)</a>,
+to create and edit Python scripts. Others use text editors like Vim or
+Emacs to hand-code Python. After editing and saving Python scripts you
+can execute those programs within an IDE or directly on the command
+line.</p>
 </div>
 </div>
 </div>
@@ -514,14 +521,14 @@ your data and visualize the results of your analysis.</li>
 <li>Each notebook contains one or more cells that contain code, text, or
 images.</li>
 </ul></div>
-</section><section><h2 class="section-heading" id="google-colab">Google colab<a class="anchor" aria-label="anchor" href="#google-colab"></a></h2>
-<hr class="half-width"><p>Google colab is a web-based computational notebook hosted in the
+</section><section><h2 class="section-heading" id="google-colab">Google Colab<a class="anchor" aria-label="anchor" href="#google-colab"></a></h2>
+<hr class="half-width"><p>Google Colab is a web-based computational notebook hosted in the
 cloud by Google. Much like a lab notebook where a wet-lab
 experimentalist might have both the experimental protocol and notes on
 the specific experiment, a Jupyter notebook allows you to have code and
 notes in the same notebook.</p>
 <p>Visit <a href="https://colab.research.google.com/" class="external-link uri">https://colab.research.google.com/</a> and click on
-<code>Examples</code> or, if you’re already in colab,
+<code>Examples</code> or, if you’re already in Colab,
 <code>File -&gt; Open notebook</code>. Then in the resulting window,
 click on <code>Examples</code>.</p>
 <p>Google offers many example notebooks:</p>
@@ -531,7 +538,7 @@ down</a> if you’re not active in the notebook. If you see an “Are you
 still there?” window during this workshop, complete the prompt so your
 colab notebooks stays active.</p>
 <div>
-<figure><img src="fig/are_you_still_there.png" width="400" class="figure mx-auto d-block"></figure></div>
+<figure><img src="fig/are_you_still_there.png" alt="Are you still there prompt" width="400" class="figure mx-auto d-block"></figure></div>
 <p>If you see <code>Connect</code> or <code>Reconnect</code>, you’ve
 been disconnected from a hosted runtime and you’ll need to reconnect.
 Any work you did in the notebook is likely to be stale and you’ll need
@@ -631,11 +638,21 @@ cell.</p>
 <div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Note on keyboard shortcuts for Mac </h3>
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Note on Colab keyboard shortcuts </h3>
 </button>
 <div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
-<p>In colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook
+<p>Colab keyboard shortcuts use CMD ⌘ (on a Mac) or CTRL (on Windows)
+key together with the m key to activate a keyboard shortcut.</p>
+<p>CMD/CTRL M + h show a list of keyboard shortcut options<br>
+CMD/CTRL M + a insert code cell above<br>
+CMD/CTRL M + b insert code cell below<br>
+CMD/CTRL M + m convert cell to markdown cell<br>
+CMD/CTRL M + y convert cell to code cell
+:::::::::::::::::::::::::::::::::::::::::: spoiler</p>
+<div class="section level2">
+<h2 id="about-keyboard-shortcuts-for-mac">About keyboard shortcuts for Mac<a class="anchor" aria-label="anchor" href="#about-keyboard-shortcuts-for-mac"></a></h2>
+<p>In Colab, Macs can use Ctrl+F9 OR ⌘+F9. In other Jupyter notebook
 environments, Ctrl+F9 may not be an option for Mac. For the rest of this
 workshop, we’ll use indicate Ctrl+&lt;keystroke&gt; for simplicity. Mac
 users should keep in mind that using Command (⌘) in lieu of Ctrl is an
@@ -644,6 +661,8 @@ option.</p>
 </div>
 </div>
 </div>
+</div>
+<p>::::::::::::::::::::::::::::::::::::::::::::::::::</p>
 <div id="markdown" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -653,22 +672,14 @@ option.</p>
 <div class="callout-content">
 
 <p>You can add text to a Juypter notebook by selecting a cell, and
-changing the dropdown above the notebook from <code>Code</code> to
-<code>Markdown</code>. Markdown is a lightweight language for formatting
-text. This feature allows you to annotate your code, add headers, and
-write documentation to help explain the code. While we won’t cover
-Markdown in this lesson, there are many helpful online guides out there:
-- <a href="https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet" class="external-link">Markdown
+changing the cell from <code>Code</code> to <code>Markdown</code>. In
+Colab, select the cell, then use the keyboard shortcut CMD/CTRL M + y.
+Markdown is a lightweight language for formatting text. This feature
+allows you to annotate your code, add headers, and write documentation
+to help explain the code. While we won’t cover Markdown in this lesson,
+there are many helpful online guides out there: - <a href="https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet" class="external-link">Markdown
 for Jupyter Cheatsheet (IBM)</a> - <a href="https://www.markdownguide.org/" class="external-link">Markdown Guide (Matt Cone)</a></p>
-<figure><img src="fig/0_jupyter_markdown_dd.png" alt="screenshot of the Jupyter notebook dropdown to change a cell to Markdown" class="figure mx-auto d-block"><div class="figcaption">Changing a cell from Code to Markdown</div>
-</figure><p>You can also use “hotkeys”” to change Jupyter cells from Code to
-Markdown and back:</p>
-<ul><li>Click on the code cell that you want to convert to a Markdown
-cell.</li>
-<li>Press the <kbd>Esc</kbd> key to enter command mode.</li>
-<li>Press the <kbd>M</kbd> key to convert the cell to Markdown.</li>
-<li>Press the <kbd>y</kbd> key to convert the cell back to Code.</li>
-</ul></div>
+</div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -748,8 +759,8 @@ any links that you are not going to use.
   "url": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/getting-started.html",
   "identifier": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/getting-started.html",
   "dateCreated": "2024-09-01",
-  "dateModified": "2024-09-04",
-  "datePublished": "2024-09-10"
+  "dateModified": "2024-09-11",
+  "datePublished": "2024-09-11"
 }
 
   </script><script>

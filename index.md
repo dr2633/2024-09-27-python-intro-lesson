@@ -6,7 +6,7 @@ site: sandpaper::sandpaper_site
 ## First adaptation of Python Intro for Libraries to Broad Computing Basics: Sept 1, 2024
 The Python Intro for Libraries lesson currently uses a dataset of library usage data and uses Google Colab instead of JupyterLab. If you were familiar with the original version of the lesson and are planning to teach it again, please give yourself time to review the lesson for changes made to "Broadify" the content.
 
-In future, this lesson may be adapted to use a more genomic-oriented dataset.
+In future, this lesson may be adapted to use a more genomics-oriented dataset.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 

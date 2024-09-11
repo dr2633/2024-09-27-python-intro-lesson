@@ -23,6 +23,23 @@ We will need to import our own resources into Colab, such as our simulated data.
 
 You should see a `lc-python` folder in "My Drive", with a subfolder called `data`.
 
+## Run the access test  
+1. Visit https://broad.io/cb-python-access-test  
+1. Click "Copy to Drive" and create your own copy of `Python_workshop_data_access_test.ipynb`  
+![](fig/run_access_test.png){alt='Click Copy to Drive'}
+
+1. If you see this dialog box, click "Connect to Google Drive"
+![](fig/permit_access.png){alt='Click "Connect to Google Drive"'}
+
+1. Authorize access for the google account you're using for this workshop. There will be several prompts to grant access.
+![](fig/authorize_access.png){alt='Authorize access to your google account'}
+1. Once access has been granted, go back to the access test notebook, click the ▶️ symbol on the left hand side of the first code cell.
+
+![](fig/success.png){alt='the ▶️ symbol'}
+You've successfully loaded data if you see a dataframe appear beneath the code cell.
+
+If you need help with setup, we'll have office hours on Fri. Sept. 20 from 12:00 - 1:00pm in Tahiti Conference Room, 105B Room #301 and on Fri. Sept. 27 from 1:00 - 2:00pm in Madagascar Conference Room,  105B, Room #504.
+
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 

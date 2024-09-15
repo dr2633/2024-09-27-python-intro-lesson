@@ -60,19 +60,19 @@ contact: 'cb-python-admin@broadinstitute.org'
 
 # Order of episodes in your lesson
 episodes: 
-- getting-started.md
-- variables.md
-- lists.md
-- functions.md
-- libraries.md
-- for-loops.md
-- looping-data-sets.md
-- pandas.md
-- conditionals.md
-- writing-functions.md
-- tidy.md
-- data-visualisation.md
-- wrap.md
+  - getting-started.md
+  - variables.md
+  - lists.md
+  - functions.md
+  - libraries.md
+  - for-loops.md
+  - looping-data-sets.md
+  - pandas.md
+  - conditionals.md
+  - writing-functions.md
+  - tidy.md
+  - data-visualisation.md
+  - wrap.md
 
 
 # Information for Learners

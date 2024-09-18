@@ -215,9 +215,9 @@ chinatown['circulation'].plot()
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Modify a plot display
+## Bonus Challenge: Modify a plot display
 
 Add a line to the code below to plot the Uptown branch circulation including the following plot elements:
 

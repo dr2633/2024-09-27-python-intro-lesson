@@ -153,51 +153,6 @@ for user in users:
 *Warning*: 120 is over the grad limit.
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Age conditionals
-
-Write a Python program that checks the age of a user to determine if they will receive a youth or adult library card. The program should:
-
-1. Store `age` in a variable.
-2. Use an `if` statement to check if the age is 16 or older. If true, print "You are eligible for an adult library card."
-3. Use an `else` statement to print "You are eligible for a youth library card" if the age is less than 16.
-
-If you finish early, try this challenge: 
-
-- In a new cell, adapt your program to loop through a list of age values, testing each age with the same output as above.
-
-:::::::::::::::  solution
-
-## Solution
-
-For parts 1 to 3:
-
-```python
-age = 25
-
-if age >= 16:
-  print('You are eligible for an adult library card.')
-else:
-  print('You are eligible for a youth library card.')
-```
-
-For the challenge:
-```python
-ages = [10, 16, 30, 65]
-
-for age in ages:
-  if age >= 16:
-    print('You are eligible for an adult library card.')
-  else:
-    print('You are eligible for a youth library card.')
-```
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -285,6 +240,53 @@ for filename in glob.glob('data/*.csv'):
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## Bonus Challenge: Age conditionals
+
+Write a Python program that checks the age of a user to determine if they will receive a youth or adult library card. The program should:
+
+1. Store `age` in a variable.
+2. Use an `if` statement to check if the age is 16 or older. If true, print "You are eligible for an adult library card."
+3. Use an `else` statement to print "You are eligible for a youth library card" if the age is less than 16.
+
+If you finish early, try this challenge: 
+
+- In a new cell, adapt your program to loop through a list of age values, testing each age with the same output as above.
+
+:::::::::::::::  solution
+
+## Solution
+
+For parts 1 to 3:
+
+```python
+age = 25
+
+if age >= 16:
+  print('You are eligible for an adult library card.')
+else:
+  print('You are eligible for a youth library card.')
+```
+
+For the challenge:
+```python
+ages = [10, 16, 30, 65]
+
+for age in ages:
+  if age >= 16:
+    print('You are eligible for an adult library card.')
+  else:
+    print('You are eligible for a youth library card.')
+```
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 

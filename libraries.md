@@ -362,9 +362,9 @@ where there are clear abbreviation conventions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Locating the Right Module
+## Bonus Challenge: Locating the Right Module
 
 Given the variables `year`, `month` and `day`, how would you generate a date in the standard iso format:
 

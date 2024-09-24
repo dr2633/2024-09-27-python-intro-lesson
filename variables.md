@@ -280,9 +280,9 @@ variable for temporary storage. This is a fairly common programming idiom.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Predicting Values
+## Bonus Challenge: Predicting Values
 
 What is the final value of `position` in the program below?
 (Try to predict the value without running the program,
@@ -317,9 +317,9 @@ The last assignment to position was "left"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Can you slice integers?
+## Bonus Challenge: Can you slice integers?
 
 If you assign `a = 123`,
 what happens if you try to get the second digit of `a`?
@@ -381,9 +381,9 @@ But we can also use implicit and negative index values when we define a slice. T
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Fractions
+## Bonus Challenge: Fractions
 
 What type of value is 3.4?
 How can you find out?

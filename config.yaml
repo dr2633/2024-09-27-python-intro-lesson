@@ -59,38 +59,38 @@ contact: 'cb-python-admin@broadinstitute.org'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- getting-started.md
-- variables.md
-- lists.md
-- functions.md
-- libraries.md
-- for-loops.md
-- looping-data-sets.md
-- pandas.md
-- conditionals.md
-- writing-functions.md
-- tidy.md
-- data-visualisation.md
-- wrap.md
+episodes:
+  - getting-started.md
+  - variables.md
+  - lists.md
+  - functions.md
+  - libraries.md
+  - for-loops.md
+  - looping-data-sets.md
+  - conditionals.md
+  - writing-functions.md
+  - data-visualisation.md
+  - pandas.md
+  - tidy.md
+  - wrap.md
 
 
 # Information for Learners
-learners: 
+learners:
   - setup.md
   - reference.md
   - discuss.md
   - extra_topics.md
 
 # Information for Instructors
-instructors: 
+instructors:
   - instructor-notes.md
   - design.md
   - extra_exercises.md
   - additional_material.md
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #

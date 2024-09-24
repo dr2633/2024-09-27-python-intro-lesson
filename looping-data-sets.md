@@ -242,9 +242,9 @@ for csv in sorted(glob.glob('data/*.csv')):
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Compile CSVs into one DataFrame
+## Bonus Challenge: Compile CSVs into one DataFrame
 
 Imagine you had a folder named `outputs/` that included all kinds of different file types. Use `glob` and a `for` loop to iterate through all of the CSV files in the folder that have a file name that begins with `data`. Save them to a list called `dfs`, and then use `pd.concat()` to concatenate all of the DataFrames from the `dfs` list together into a new DataFrame called, `new_df`. You can assume that all of the data CSV files have the same columns so they will concatenate together cleanly using `pd.concat()`.
 

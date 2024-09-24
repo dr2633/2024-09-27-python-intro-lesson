@@ -247,7 +247,7 @@ for veg in vegetables:
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
 ## Use range() in a loop
 
@@ -280,7 +280,7 @@ for num in range(10, 16):
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Use a string index in a loop
+## Bonus Challenge: Use a string index in a loop
 
 How would you loop through a list with the values 'red', 'green', and 'blue' to create the acronym `rgb`, pulling from the first letters in each string? Print the acronym when the loop is finished.
 
@@ -307,9 +307,9 @@ You could also concatenate inside of the loop with `acronym += color[0]`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Subtract a list of values in a loop
+## Bonus Challenge: Subtract a list of values in a loop
 
 1. Create an accumulator variable called `total` that starts at 100.
 2. Create a list called `numbers` with the values of 10, 15, 20, 25, 30.

@@ -187,9 +187,9 @@ print(numbers[3:])
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Fill in the Blanks
+## Bonus Challenge: Fill in the Blanks
 
 Fill in the blanks so that the program below produces the output shown. In the first line we create a blank list by assigning `values = []`.
 
@@ -232,9 +232,9 @@ second time [3, 5]
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Working With the End
+## Bonus Challenge: Working With the End
 
 Run the following code on your own and answer the following questions.
 

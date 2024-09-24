@@ -292,7 +292,7 @@ about data.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="pandas.html">8. Using Pandas</a>
+        <a href="conditionals.html">8. Conditionals</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -301,7 +301,7 @@ about data.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="conditionals.html">9. Conditionals</a>
+        <a href="writing-functions.html">9. Writing Functions</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -310,7 +310,7 @@ about data.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="writing-functions.html">10. Writing Functions</a>
+        <a href="data-visualisation.html">10. Data Visualisation</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -319,7 +319,7 @@ about data.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="tidy.html">11. Tidy Data with Pandas</a>
+        <a href="pandas.html">11. Using Pandas</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -328,7 +328,7 @@ about data.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush13">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading13">
-        <a href="data-visualisation.html">12. Data Visualisation</a>
+        <a href="tidy.html">12. Tidy Data with Pandas</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -401,7 +401,7 @@ about data.</a></li>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Libraries &amp; Pandas</h1>
-        <p>Last updated on 2024-09-03 |
+        <p>Last updated on 2024-09-24 |
 
         <a href="https://github.com/broadinstitute/2024-09-27-python-intro-lesson/edit/main/episodes/libraries.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -1079,7 +1079,7 @@ course of the year.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1106,13 +1106,13 @@ conventions.</p>
 </div>
 </div>
 </div>
-<div id="locating-the-right-module" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="locating-the-right-module" class="callout-inner">
-<h3 class="callout-title">Locating the Right Module</h3>
-<div class="callout-content">
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Bonus Challenge: Locating the Right Module </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div class="accordion-body">
 <p>Given the variables <code>year</code>, <code>month</code> and
 <code>day</code>, how would you generate a date in the standard iso
 format:</p>
@@ -1127,15 +1127,12 @@ format:</p>
 library</a> module could help you?</li>
 <li>Which function would you select from that module?</li>
 <li>Try to write a program that uses the function.</li>
-</ol></div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+</ol><div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>The <a href="https://docs.python.org/3/library/datetime.html" class="external-link">datetime
 module</a> seems like it could help you.</p>
@@ -1161,12 +1158,16 @@ convert your date:</p>
 </div>
 </div>
 </div>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Is there something special about that date in library history? </h3>
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Is there something special about that date in library history? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <p>According to <a href="https://www.wccls.org/news/brief-history-library-catalog" class="external-link">Washington
 County Cooperative Library Services</a>: “1971, August 26 – Ohio
@@ -1260,7 +1261,7 @@ any links that you are not going to use.
   "url": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/libraries.html",
   "identifier": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/libraries.html",
   "dateCreated": "2024-09-01",
-  "dateModified": "2024-09-03",
+  "dateModified": "2024-09-24",
   "datePublished": "2024-09-24"
 }
 

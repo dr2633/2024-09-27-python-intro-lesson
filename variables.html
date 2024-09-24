@@ -292,7 +292,7 @@ string.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="pandas.html">8. Using Pandas</a>
+        <a href="conditionals.html">8. Conditionals</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -301,7 +301,7 @@ string.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="conditionals.html">9. Conditionals</a>
+        <a href="writing-functions.html">9. Writing Functions</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -310,7 +310,7 @@ string.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="writing-functions.html">10. Writing Functions</a>
+        <a href="data-visualisation.html">10. Data Visualisation</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -319,7 +319,7 @@ string.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush12">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading12">
-        <a href="tidy.html">11. Tidy Data with Pandas</a>
+        <a href="pandas.html">11. Using Pandas</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -328,7 +328,7 @@ string.</a></li>
 <div class="accordion accordion-flush" id="accordionFlush13">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading13">
-        <a href="data-visualisation.html">12. Data Visualisation</a>
+        <a href="tidy.html">12. Tidy Data with Pandas</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -401,7 +401,7 @@ string.</a></li>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Variables and Types</h1>
-        <p>Last updated on 2024-09-03 |
+        <p>Last updated on 2024-09-24 |
 
         <a href="https://github.com/broadinstitute/2024-09-27-python-intro-lesson/edit/main/episodes/variables.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -782,13 +782,13 @@ storage. This is a fairly common programming idiom.</p>
 </div>
 </div>
 </div>
-<div id="predicting-values" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="predicting-values" class="callout-inner">
-<h3 class="callout-title">Predicting Values</h3>
-<div class="callout-content">
+<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
+  <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Bonus Challenge: Predicting Values </h3>
+</button>
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div class="accordion-body">
 <p>What is the final value of <code>position</code> in the program
 below? (Try to predict the value without running the program, then check
 your prediction.)</p>
@@ -798,9 +798,6 @@ your prediction.)</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a>initial <span class="op">=</span> <span class="st">"left"</span></span>
 <span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a>position <span class="op">=</span> initial</span>
 <span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a>initial <span class="op">=</span> <span class="st">"right"</span></span></code></pre>
-</div>
-</div>
-</div>
 </div>
 <div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
@@ -827,18 +824,19 @@ your prediction.)</p>
 </div>
 </div>
 </div>
-<div id="can-you-slice-integers" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="can-you-slice-integers" class="callout-inner">
-<h3 class="callout-title">Can you slice integers?</h3>
-<div class="callout-content">
+</div>
+</div>
+</div>
+<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
+  <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Bonus Challenge: Can you slice integers? </h3>
+</button>
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div class="accordion-body">
 <p>If you assign <code>a = 123</code>, what happens if you try to get
 the second digit of <code>a</code>?</p>
-</div>
-</div>
-</div>
 <div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
@@ -858,6 +856,10 @@ be treated like strings.</p>
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="error" tabindex="0"><code>TypeError: 'int' object is not subscriptable</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -914,17 +916,14 @@ and ending a distance of the absolute value of
 </div>
 </div>
 </div>
-<div id="fractions" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="fractions" class="callout-inner">
-<h3 class="callout-title">Fractions</h3>
-<div class="callout-content">
+<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
+  <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Bonus Challenge: Fractions </h3>
+</button>
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div class="accordion-body">
 <p>What type of value is 3.4? How can you find out?</p>
-</div>
-</div>
-</div>
 <div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
@@ -942,6 +941,10 @@ and ending a distance of the absolute value of
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>&lt;class 'float'&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1070,7 +1073,7 @@ any links that you are not going to use.
   "url": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/variables.html",
   "identifier": "https://broadinstitute.github.io/2024-09-27-python-intro-lesson/variables.html",
   "dateCreated": "2024-09-01",
-  "dateModified": "2024-09-03",
+  "dateModified": "2024-09-24",
   "datePublished": "2024-09-24"
 }
 

@@ -230,9 +230,9 @@ addition(3, 6)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Conditional statements within functions
+## Bonus Challenge: Conditional statements within functions
 
 Create a function called `grade_converter` that takes a numerical score (0 - 100) as its parameter and returns a letter grade based on the score:
 
@@ -275,9 +275,9 @@ grade_converter(88)
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Local and global variables
+## Bonus Challenge: Local and global variables
 
 List all of the global variables and all of the local variables in the following code. 
 
@@ -317,9 +317,9 @@ Local variables:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## CSVs to Pandas function
+## Bonus Challenge: CSVs to Pandas function
 In the [Looping Data Sets episode](looping-data-sets.html#appending-dataframes-to-a-list), we learned to use glob to loop through a directory of CSV files and convert them to a Pandas DataFrame. 
 
 Write a function that converts a directory of CSV files into a single Pandas DataFrame. The function should accept one parameter: a string that includes the path and glob wildcard expression to point to a set of CSV files (e.g., `'data/*.csv'`). We can assume, for these purposes, that all of the DataFrames have the same column names so that you can use `pd.concat(dfs, ignore_index=True)` at the end of the function to concatenate a list of DataFrames into a single DataFrame.

@@ -371,9 +371,9 @@ You can use each content unit (e.g., RDM, DMP, Python) as an observation, and br
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Subsetting df_long
+## Bonus Challenge: Subsetting df_long
 
 Using df_long, create a new DataFrame, `low_circ', that only includes branches with circulation numbers lower than 500 per month. When you create a subset DataFrame, show the following columns: branch, circulation, month, and year. Next, eliminate the rows when the circulation is equal to 0. 
 
@@ -397,9 +397,9 @@ low_circ.sort_values(by='circulation', ascending=False)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+:::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## Group and aggregate for circulation by year
+## Bonus Challenge: Group and aggregate for circulation by year
 How would you create a subset of `df_long` that sums up the circulation by year across all branches? In other words you want a view of the DataFrame that includes one row for each year, and columns for 'year' and 'sum', the latter of which shows the sum of circulation for all branches in each year.
 
 

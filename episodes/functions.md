@@ -146,7 +146,7 @@ The least expensive lunch costs $8.00
 
 
 ## Even when a function returns nothing, it returns something.
-If a function doesn't have a useful result to return, it usually returns the special value `None`. (Usually, that means the function was meant to carry out a set of instructions, like printing something or modifying variables. You could say these functions are all about the journey, not the destination.) 
+If a function doesn't have a useful result to return, it usually returns the special value `None`. Generally speaking, that means the function was meant to carry out a set of instructions, like printing something or modifying variables. You could say these functions are all about the journey, not the destination.
 
 Each line of Python code is executed in order. In this case, the second line call to `{result}` returns 'None' since the `print` statement in the previous line didn't return a value to the `result` variable.
 

@@ -23,21 +23,21 @@ The most popular kind of data collection in Python is the list. Lists have two p
 1. They are mutable, i.e., they can be changed after they are created.
 2. They are heterogeneous, i.e., they can store values of many different types.
 
-To create a new list, you can just put some values in square brackets with commas in between. Let's create a short list of some library metadata standards.
+To create a new list, you can just put some values in square brackets with commas in between. Let's create a short list of some amino acids.
 
 ```python
-metadata = ['marc', 'frbr', 'mets', 'mods']
-metadata
+amino_acids = ['alanine', 'leucine', 'cysteine', 'isoleucine']
+amino_acids
 ```
 
 ```output
-['marc', 'frbr', 'mets', 'mods']
+['alanine', 'leucine', 'cysteine', 'isoleucine']
 ```
 
 We can use `len()` to find out how many values are in a list.
 
 ```python
-len(metadata)
+len(amino_acids)
 ```
 
 ```output
@@ -49,13 +49,13 @@ len(metadata)
 In the same way we used index numbers for strings, we can reference elements and slices in a list.
 
 ```python
-print(f'First item: {metadata[0]}')
-print(f'The first three items: {metadata[0:3]}')
+print(f'First item: {amino_acids[0]}')
+print(f'The first three items: {amino_acids[0:3]}')
 ```
 
 ```output
-First item: marc
-The first three items: ['marc', 'frbr', 'mets']
+First item: alanine
+The first three items: ['alanine', 'leucine', 'cysteine']
 ```
 
 ## Reassign list values with their index.
@@ -64,13 +64,13 @@ Use an index value along with your list variable to replace a value from the lis
 
 ```python
 print(f'List was: {metadata}')
-metadata[0] = 'bibframe'
+metadata[0] = 'methionine'
 print(f'List is now: {metadata}')
 ```
 
 ```output
-List was: ['marc', 'frbr', 'mets', 'mods']
-List is now: ['bibframe', 'frbr', 'mets', 'mods']
+List was: ['alanine', 'leucine', 'cysteine', 'isoleucine']
+List is now: ['methionine', 'leucine', 'cysteine', 'isoleucine']
 ```
 
 
@@ -79,25 +79,12 @@ List is now: ['bibframe', 'frbr', 'mets', 'mods']
 Unlike lists, we cannot change the characters in a string using its index value. In other words strings are *immutable* (cannot be changed in-place after creation), while lists are *mutable*: they can be modified in place. Python considers the string to be a single value with parts, not a collection of values.
 
 ```python
-librarian = 'Langanathan' # misspelled SR Ranganathan's name
-librarian[0] = 'R'
+ile = 'Osoleucine' # oops, typo!
+ile[0] = 'I'
 ```
 
 ```error
 TypeError: 'str' object does not support item assignment
-```
-
-## Lists may contain values of different types.
-
-A single list may contain numbers, strings, and anything else (including other lists!). If you're dealing with a list within a list you can continue to use the square bracket notation to reference specific items. 
-
-```python
-mixed_list = ['string', 3.2, [10, 20, 30]]
-f'First item in sublist: {mixed_list[2][0]}'
-```
-
-```output
-First item in sublist: 10
 ```
 
 ## Appending items to a list lengthens it.
@@ -105,14 +92,62 @@ First item in sublist: 10
 Use `list_name.append` to add items to the end of a list. In Python, we would call `.append()` a *method* of the list object. You can use the syntax of `object.method()` to call methods.
 
 ```python
-print(f'list was:{metadata}')
-metadata.append('oai-pmh')
-print(f'list is now: {metadata}')
+print(f'list was:{amino_acids}')
+amino_acids.append('glutamine')
+print(f'list is now: {amino_acids}')
 ```
 
 ```output
-list was: ['bibframe', 'frbr', 'mets', 'mods']
-list is now: ['bibframe', 'frbr', 'mets', 'mods', 'oai-pmh']
+list was: ['methionine', 'leucine', 'cysteine', 'isoleucine']
+list is now: ['methionine', 'leucine', 'cysteine', 'isoleucine', 'glutamine']
+```
+
+
+## Lists may contain values of different types.
+
+A single list may contain numbers, strings, and anything else (including other lists!). If you're dealing with a list within a list you can continue to use the square bracket notation to reference specific items. 
+
+```python
+mixed_list = ['hello world', 3.2, [10, 20, 30]]
+f'First item in sublist: {mixed_list[2][0]}'
+```
+
+```output
+First item in sublist: 10
+```
+
+## Lists can contain lists.
+
+Lists which contain other lists can be very useful. Imagine you poll your friends on their favorite pizza toppings.
+
+```python
+pizza_toppings = ['pepperoni', 'mushroom', 'pineapple']
+print(pizza_toppings)
+```
+
+```output
+['pepperoni', 'mushroom', 'pineapple']
+```
+
+One of your friends likes Buffalo chicken pizza. Buffalo chicken is really three toppings combined: chicken, Buffalo sauce, and blue cheese. Here is how we can represent that in the list.
+
+```python
+buffalo_chicken = ['chicken', 'buffalo sauce', 'blue cheese']
+pizza_toppings.append(buffalo_chicken)
+print(pizza_toppings)
+```
+
+```output
+['pepperoni', 'mushroom', 'pineapple', ['chicken', 'buffalo sauce', 'blue cheese']]
+```
+We can access the items in the sublist as shown above:
+
+```python
+print(pizza_toppings[3][2])
+```
+
+```output
+blue cheese
 ```
 
 ## Use `del` to remove items from a list entirely.
@@ -189,6 +224,51 @@ print(numbers[3:])
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
+## Bonus Challenge: More Pizza
+
+Another person has responded to your pizza poll. Their favorite pizza is Veggie (green pepper, onion, mushroom, broccoli, and olive).
+
+###
+1. Create a variable that represents the toppings making up a veggie pizza.
+2. Add the veggie pizza to your pizza list.
+3. Print the updated pizza list.
+4. Use list indexing to print the *second* item that goes on a veggie pizza.
+
+Here is the current pizza list to get you started: 
+
+```python
+pizza_toppings = ['pepperoni', 'mushroom', 'pineapple', ['chicken', 'buffalo sauce', 'blue cheese']]
+print(pizza_toppings)
+```
+
+```output
+['pepperoni', 'mushroom', 'pineapple', ['chicken', 'buffalo sauce', 'blue cheese']]
+```
+
+<!-- vertical spacer -->
+
+:::::::::::::::  solution
+
+## Solution
+
+```python
+veggie = ['green pepper', 'onion', 'mushroom', 'broccoli', 'olive']
+pizza_toppings.append(veggie)
+print(pizza_toppings)
+print(pizza_toppings[4][1])
+```
+
+```output
+['pepperoni', 'mushroom', 'pineapple', ['chicken', 'buffalo sauce', 'blue cheese'], ['green pepper', 'onion', 'mushroom', 'broccoli', 'olive']]
+onion
+```
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
 ## Bonus Challenge: Fill in the Blanks
 
 Fill in the blanks so that the program below produces the output shown. In the first line we create a blank list by assigning `values = []`.
@@ -207,6 +287,8 @@ print(f'second time: {values})
 first time: [1, 3, 5]
 second time: [3, 5]
 ```
+
+<!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -245,6 +327,8 @@ print(resources[-1])
 
 1. How does Python interpret a negative index value?
 2. If `resources` is a list, what does `del resources[-1]` do?
+
+<!-- vertical spacer -->
 
 :::::::::::::::  solution
 

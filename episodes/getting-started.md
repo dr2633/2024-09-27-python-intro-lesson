@@ -98,9 +98,7 @@ Google offers many example notebooks:
 
 Google offers a basic colab experience for free. Hosted runtime machines consume computing resources which will be [shut down](https://research.google.com/colaboratory/faq.html#resource-limits) if you're not active in the notebook. If you see an "Are you still there?" window during this workshop, complete the prompt so your colab notebooks stays active. 
 
-<div>
 <img src="fig/are_you_still_there.png" alt="Are you still there prompt" width="400"/>
-</div>
 
 If you see `Connect` or `Reconnect`, you've been disconnected from a hosted runtime and you'll need to reconnect. Any work you did in the notebook is likely to be stale and you'll need to `Runtime -> Run all` (Ctrl+F9). 
 

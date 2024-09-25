@@ -177,6 +177,56 @@ To save ourselves a lot of typing, let's save the location of our downloaded fil
 file_location = "drive/MyDrive/lc-python"
 ```
 
+:::::::::::::::::::::::::::::::::::::::::: spoiler
+
+## What if the files have not been copied to my Google Drive yet?
+
+We wanted you to know how to make files you have on your computer accessible for use in Colab and persist over time. To save time now, run `wget` to download files directly to the cloud:
+
+```bash
+!wget https://github.com/jlchang/cb-python-intro-lesson-template/raw/refs/heads/main/episodes/files/data.zip
+!unzip data.zip
+```
+```output
+--2024-09-25 17:56:34--  https://github.com/jlchang/cb-python-intro-lesson-template/raw/refs/heads/main/episodes/files/data.zip
+Resolving github.com (github.com)... 20.27.177.113
+Connecting to github.com (github.com)|20.27.177.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/jlchang/cb-python-intro-lesson-template/refs/heads/main/episodes/files/data.zip [following]
+--2024-09-25 17:56:34--  https://raw.githubusercontent.com/jlchang/cb-python-intro-lesson-template/refs/heads/main/episodes/files/data.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 138902 (136K) [application/zip]
+Saving to: ‘data.zip’
+
+data.zip            100%[===================>] 135.65K  --.-KB/s    in 0.09s   
+
+2024-09-25 17:56:35 (1.54 MB/s) - ‘data.zip’ saved [138902/138902]
+
+Archive:  data.zip
+   creating: data/
+  inflating: data/2011_circ.csv      
+  inflating: data/all_years.pkl      
+  inflating: data/df_long.pkl        
+  inflating: data/2016_circ.csv      
+  inflating: data/2017_circ.csv      
+  inflating: data/2022_circ.csv      
+  inflating: data/2018_circ.csv      
+  inflating: data/2019_circ.csv      
+  inflating: data/2012_circ.csv      
+  inflating: data/2013_circ.csv      
+  inflating: data/2021_circ.csv      
+  inflating: data/2020_circ.csv      
+  inflating: data/2015_circ.csv      
+  inflating: data/2014_circ.csv      
+```
+
+Note that the commands `wget` and `unzip` are shell commands, not Python. To run shell commands in Colab, preface the command with an exclaimation point and Colab will automagically know what to do.
+
+If you have files you'd download from the internet, you can move them directly to work with in Colab with `wget`. They won't be in your Google Drive (they were copied onto the machine in the cloud running Colab, if you disconnect from Colab, the files will not persist.) 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 Let's load our CSV file into a pandas DataFrame, and save it to a new variable called `df`. We can make a string representing the location of that one specific file within our `lc-python` directory, and then pass that filename to `pd.read_csv()`.
 
 ```python

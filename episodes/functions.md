@@ -133,7 +133,22 @@ round(...)
 
 ## Every function returns something.
 
-Every function call produces some result and if the function doesn't have a useful result to return, it usually returns the special value `None`. Each line of Python code is executed in order. In this case, the second line call to `{result}` returns 'None' since the `print` statement in the previous line didn't return a value to the `result` variable.
+Every function call produces some result. When the function's goal is to produce a certain value, we say that the function *returns* that value. You can think of the function expression as synonymous with that value. You can use a function call in a "sentence" (a line of code) to represent the value it returns.
+
+```python
+lunch_prices = [9.95, 8.00, 12.50]
+print(f'The least expensive lunch costs ${min(lunch_prices)}')
+```
+
+```output
+The least expensive lunch costs $8.00
+```
+
+
+## Even when a function returns nothing, it returns something.
+If a function doesn't have a useful result to return, it usually returns the special value `None`. (Usually, that means the function was meant to carry out a set of instructions, like printing something or modifying variables. You could say these functions are all about the journey, not the destination.) 
+
+Each line of Python code is executed in order. In this case, the second line call to `{result}` returns 'None' since the `print` statement in the previous line didn't return a value to the `result` variable.
 
 ```python
 result = print('example')

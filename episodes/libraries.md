@@ -179,7 +179,7 @@ file_location = "drive/MyDrive/lc-python"
 
 :::::::::::::::::::::::::::::::::::::::::: spoiler
 
-## What if the files have not been copied to my Google Drive yet?
+### What if the files have not been copied to my Google Drive yet?
 
 We wanted you to know how to make files you have on your computer accessible for use in Colab and persist over time. To save time now, run `wget` to download files directly to the cloud:
 

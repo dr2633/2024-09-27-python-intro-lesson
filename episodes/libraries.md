@@ -160,13 +160,28 @@ Using these common aliases can make it easier to work with existing documentatio
 Essentially, it gives you access to 2-dimensional tables whose columns have names and can have different data types. We can start using pandas by reading a `Comma Separated Values` (CSV) data file with the function `pd.read_csv()`. The function `.read_csv()` expects as an argument the path to and name of the file to be read. This returns a dataframe that you can assign to a variable.
 
 ### Find your CSV files
-
-From the file browser in the left sidebar you can select the `data` folder to view the contents of the folder. If you downloaded and uncompressed the dataset correctly, you should see a series of CSV files from 2011 to 2022. If you double-click on the first file, `2011_circ.csv`, you will see a preview of the CSV file in a new tab in the main panel of JupyterLab. 
-
-Let's load that file into a pandas DataFrame, and save it to a new variable called `df`.
+Now we will use the CSV files you downloaded and uncompressed earlier. If you followed the setup instructions, these files will be in your Google Drive. To access them, we will need to import a module that will let us use files from Drive. Run the following code to enable Drive access.
 
 ```python
-df = pd.read_csv('data/2011_circ.csv')
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+```output
+Mounted at /content/drive
+```
+
+To save ourselves a lot of typing, let's save the location of our downloaded files to a variable.
+
+```python
+file_location = "drive/MyDrive/lc-python"
+```
+
+Let's load our CSV file into a pandas DataFrame, and save it to a new variable called `df`. We can make a string representing the location of that one specific file within our `lc-python` directory, and then pass that filename to `pd.read_csv()`.
+
+```python
+data_filename = f'{file_location}/data/2011_circ.csv'
+df = pd.read_csv(data_filename)
 print(df)
 ```
 ```output
@@ -218,7 +233,7 @@ print(df)
 
 Our lessons store their data files in a `data` sub-directory,
 which is why the path to the file is `data/2011_circ.csv`.
-If you forget to include `data/`, or if you include it but your copy of the file is somewhere else in relation to your Jupyter Notebook, you will get an error that ends with a line like this:
+If you forget to include `data/`, or if you don't make sure to begin the path with the location inside Drive, or even if your copy of the file is somewhere else in relation to your Jupyter Notebook, you will get an error that ends with a line like this:
 
 ```error
 FileNotFoundError: [Errno 2] No such file or directory: 'data/2011_circ.csv'

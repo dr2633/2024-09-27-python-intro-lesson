@@ -197,7 +197,7 @@ Instructors: Since the lesson is focused on Python we don't include any Markdown
 
 :::::::::::::::::::::::::::::::::::::::::::::::::
 
-You can add text to a Juypter notebook by selecting a cell, and changing the cell from `Code` to `Markdown`. In Colab, select the cell, then use the keyboard shortcut CMD/CTRL M + y. Markdown is a lightweight language for formatting text. This feature allows you to annotate your code, add headers, and write documentation to help explain the code. While we won't cover Markdown in this lesson, there are many helpful online guides out there:
+You can add text to a Juypter notebook by selecting a cell, and changing the cell from `Code` to `Markdown`. In Colab, select the cell, then use the keyboard shortcut CMD/CTRL M + y. You can also add a new text cell by selecting "Text" instead of "Code" in the Colab browser interface when you add a new cell.  Markdown is a lightweight language for formatting text. This feature allows you to annotate your code, add headers, and write documentation to help explain the code. While we won't cover Markdown in this lesson, there are many helpful online guides out there:
 - [Markdown for Jupyter Cheatsheet (IBM)](https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet)
 - [Markdown Guide (Matt Cone)](https://www.markdownguide.org/)
 

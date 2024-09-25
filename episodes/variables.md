@@ -41,7 +41,7 @@ Variable names:
 
 ## Use `print()` to display values.
 
-You can print Python objects to the Jupyter notebook output using the built-in function, `print()`. Inside of the parentheses we can add the objects that we want print, which are known as the `print()` function's arguments.  
+You can print Python objects to the Jupyter notebook output using the built-in function, `print()`. Inside of the parentheses we can add the objects that we want to print, which are known as the `print()` function's arguments. (We will learn more about arguments later. For now, just remember that you can use one or more of them with `print()`.)
 
 ```python
 print(name, age)
@@ -51,7 +51,7 @@ print(name, age)
 Ahmed 42 
 ```
 
-In Jupyter notebooks, you can leave out the `print()` function for objects -- such as variables -- that are on the last line of a cell. If the final line of Jupyter cell includes the name of a variable, its value will display in the notebook when you run the cell.
+In Jupyter notebooks, you can leave out the `print()` function for objects -- such as variables -- that are on the last line of a cell. If the final line of Jupyter cell includes the name of a variable, its value will display in the notebook when you run the cell. But it is good practice to type out `print()` anyway.
 
 ```python
 name
@@ -157,7 +157,11 @@ TypeError: unsupported operand type(s) for -: 'str' and 'str'
 
 ## Use an index to get a single character from a string.
 
-We can reference the specific location of a character (individual letters, numbers, and so on) in a string by using its index position. In Python, each character in a string (first, second, etc.) is given a number, which is called an index. Indexes begin from 0 rather than 1. We can use an index in square brackets to refer to the character at that position.
+We can reference the specific location of a character (individual letters, numbers, and so on) in a string by using its index position. In Python, each character in a string (first, second, etc.) is given a number, which is called an index. 
+
+Indexes begin from 0 rather than 1. **Remember this part - it's important!** In Python, you can think of an index as an answer to the question: "How far are we from the beginning?" That means the first item in a group is always at index 0.
+
+We can use an index in square brackets to refer to the character at that position.
 
 ```python
 library = 'Alexandria'
@@ -294,6 +298,8 @@ position = initial
 initial = "right"
 ```
 
+  <!-- vertical spacer -->
+
 :::::::::::::::  solution
 
 ## Solution
@@ -323,6 +329,8 @@ The last assignment to position was "left"
 
 If you assign `a = 123`,
 what happens if you try to get the second digit of `a`?
+
+  <!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -387,6 +395,8 @@ But we can also use implicit and negative index values when we define a slice. T
 
 What type of value is 3.4?
 How can you find out?
+
+<!-- vertical spacer -->
 
 :::::::::::::::  solution
 

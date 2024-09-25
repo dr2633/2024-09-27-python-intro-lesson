@@ -298,6 +298,8 @@ position = initial
 initial = "right"
 ```
 
+  <!-- vertical spacer -->
+
 :::::::::::::::  solution
 
 ## Solution
@@ -327,6 +329,8 @@ The last assignment to position was "left"
 
 If you assign `a = 123`,
 what happens if you try to get the second digit of `a`?
+
+  <!-- vertical spacer -->
 
 :::::::::::::::  solution
 
@@ -391,6 +395,8 @@ But we can also use implicit and negative index values when we define a slice. T
 
 What type of value is 3.4?
 How can you find out?
+
+<!-- vertical spacer -->
 
 :::::::::::::::  solution
 
